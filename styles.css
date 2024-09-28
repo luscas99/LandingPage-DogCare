@@ -1,0 +1,241 @@
+@font-face {
+  font-family: 'Decaydence Straight.otf'; 
+  src: url('Decaydence\ Straight.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PROPAGAN.ttf'; 
+  src: url('PROPAGAN.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h2 {
+  font-family: 'Decaydence Straight.otf', sans-serif;
+  color: white;
+}
+ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-family: 'Rows of Sunflowers.ttf'; 
+  color: black;
+}
+
+body {
+  font-family: 'Decaydence Straight.otf', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  background-image: url(/fotos/dandan.jpeg);
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #074c61;
+  padding: 20px;
+}
+
+.logo img {
+  max-width: 150px;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu li {
+  display: inline;
+  margin: 0 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #515c55;
+}
+
+main {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.post {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  background-color: #4492aa;
+  border: 3px solid #ddd; 
+  border-radius: 20px; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.post.reverse {
+  flex-direction: row-reverse;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.image {
+  width: 50%;
+}
+
+.content {
+  padding: 20px;
+  width: 50%;
+}
+
+footer {
+  background-color: #444;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 0;
+}
+
+#contato {
+  background-color: #eee;
+  padding: 40px;
+  margin-top: 50px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contactForm label {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: left;
+}
+
+#contactForm input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contactForm button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#contactForm button:hover {
+  background-color: #45a049;
+}
+
+#successMessage {
+  margin-top: 20px;
+  color: green;
+  display: none;
+}
+
+#faleConosco {
+  background-color: #f4f4f4;
+  padding: 40px;
+  margin-top: 30px;
+  text-align: center;
+  border-radius: 10px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#faleConosco a {
+  text-decoration: none;
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .menu {
+    margin-top: 10px;
+  }
+
+  .menu li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .post {
+    flex-direction: column;
+  }
+
+  .post.reverse {
+    flex-direction: column;
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  .content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    max-width: 120px;
+  }
+
+  body {
+    padding: 10px;
+  }
+
+  .menu li {
+    margin: 5px 0;
+  }
+
+  .content h2 {
+    font-size: 1.2rem;
+  }
+
+  form input, form button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}

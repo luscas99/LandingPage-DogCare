@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>DOGCARE</title>
+
+</head>
+<body>
+  
+  <header>
+    <div class="logo">
+      <img src="logo2-removebg-preview.png" alt="logo">
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="https://www.instagram.com/dog.care.pet/">Instagram</a></li>
+        <li><a href="#contato">Entre em Contato</a></li>
+        <li><a href="#faleConosco">Fale Conosco</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="post">
+      <div class="image">
+        <img src="DALL·E 2024-09-27 22.03.44 - A loyal dog sitting attentively next to its owner, looking up with trust and devotion. The dog is a medium-sized breed with a soft coat, possibly a La.webp" alt="Cachorro Feliz">
+      </div>
+      <div class="content">
+        <h2>Por que os cachorros são tão leais?</h2>
+        <p>Cachorros são conhecidos por sua lealdade. Neste artigo, exploramos as razões pelas quais os cães criam laços tão fortes com os humanos.</p>
+      </div>
+    </div>
+
+    <div class="post reverse">
+      <div class="content">
+        <h2>Cuidados essenciais para seu cachorro</h2>
+        <p>Os métodos tradicionais de monitoramento da saúde e localização dos cães são ineficazes e limitados. Nossa coleira foi desenvolvida para acabar com esses problemas, proporcionando informações detalhadas sobre a saúde do seu pet.</p>
+      </div>
+      <div class="image">
+        <img src="menu.jpeg" alt="Cachorro sendo cuidado">
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="image">
+        <img src="DALL·E 2024-09-27 21.59.17 - A variety of the best dog toys arranged in a playful setting, including durable chew toys, interactive puzzle toys, fetch balls, squeaky plush toys, a.webp" alt="Cachorro brincando">
+      </div>
+      <div class="content">
+        <h2>Melhores brinquedos para cachorros</h2>
+        <p>Os dados coletados são úteis para diagnósticos e tratamentos, garantindo um cuidado preventivo eficaz.</p>
+      </div>
+    </div>
+
+    <div class="post reverse">
+      <div class="content">
+        <h2>Alimentação saudável para cães</h2>
+        <p>Uma dieta equilibrada é crucial para a saúde do seu cachorro. Veja quais alimentos são recomendados e os que devem ser evitados.</p>
+      </div>
+      <div class="image">
+        <img src="DALL·E 2024-09-27 22.02.52 - A healthy dog meal display featuring a variety of nutritious foods for dogs. The meal includes high-quality dry kibble, fresh vegetables like carrots .webp" alt="Alimentação de cachorro">
+      </div>
+    </div>
+
+    <section id="contato">
+      <h2>Entre em Contato</h2>
+      <form id="contactForm">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="whatsapp">WhatsApp:</label>
+        <input type="tel" id="whatsapp" name="whatsapp" placeholder="(XX) XXXXX-XXXX" required>
+
+        <label for="instagram">Instagram:</label>
+        <input type="text" id="instagram" name="instagram" placeholder="@usuario" required>
+
+        <label for="phone">Número para Ligar:</label>
+        <input type="tel" id="phone" name="phone" placeholder="(XX) XXXX-XXXX" required>
+
+        <button type="submit">Enviar</button>
+      </form>
+      <p id="successMessage">Obrigado por entrar em contato! Responderemos em breve.</p>
+    </section>
+
+    <section id="faleConosco">
+      <h2>Fale Conosco</h2>
+      <p>Tem alguma dúvida? Fale diretamente conosco através das redes sociais ou por telefone:</p>
+      <p>Email: <a href="mailto:contato@dogcare.com">contato@dogcare.com</a></p>
+      <p>WhatsApp: <a href="https://wa.me/5511999999999">(11) 99999-9999</a></p>
+      <p>Instagram: <a href="https://www.instagram.com/dog.care.pet">@dog.care.pet</a></p>
+      <p>Telefone: (11) 4002-8922</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 DOGCARE - Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    document.getElementById('contactLink').addEventListener('click', function(event) {
+      event.preventDefault(); 
+      document.getElementById('contactForm').style.display = 'block'; 
+    });
+
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      document.getElementById('successMessage').style.display = 'block';
+    });
+  </script>
+
+</body>
+</html>
